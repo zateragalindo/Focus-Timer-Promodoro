@@ -2,9 +2,7 @@ export default function Controls({
   buttonPlay,
   buttonPause,
   buttonStop,
-  buttonSet,
-  buttonSoundOn,
-  buttonSoundOff
+  buttonSet
 }) {
 
   function reset() {
@@ -26,11 +24,6 @@ export default function Controls({
     buttonPlay.classList.remove('hide');
   }
 
-  function soundControls() {
-    buttonSoundOn.classList.toggle('hide');
-    buttonSoundOff.classList.toggle('hide');
-  }
-
   function getMinutes() {
     let newMinutes = prompt("Quantos minutos ?");
     if (!newMinutes) {
@@ -43,7 +36,6 @@ export default function Controls({
     reset,
     play,
     pause,
-    soundControls,
     getMinutes
   }
 
